@@ -19,7 +19,7 @@ public class shooterSubsytem extends SubsystemBase {
 
     public shooterSubsytem(final HardwareMap hMap, final String shooterName, String sshooterMotor) {
         RshooterMotor = hMap.get(DcMotorEx.class, shooterName);
-        this.LshooterMotor = hMap.get(DcMotorEx.class, "sshooterMotor"); // <-- Added second motor
+        this.LshooterMotor = hMap.get(DcMotorEx.class, "LshooterMotor"); // <-- Added second motor
 
         RshooterMotor.setDirection(DcMotorSimple.Direction.FORWARD);
         this.LshooterMotor.setDirection(DcMotorSimple.Direction.REVERSE);

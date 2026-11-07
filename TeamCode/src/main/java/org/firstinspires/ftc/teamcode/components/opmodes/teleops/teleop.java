@@ -252,7 +252,7 @@ public class teleop extends CommandOpMode{
 
 
         telemetry.addData("Shooter Running", shooterRunning);
-        telemetry.addData("Sshooter Running", sshooterRunning);
+        telemetry.addData("Lshooter Running", sshooterRunning);
         telemetry.addData("Target RPM", targetRPM);
         telemetry.addData("Using RPM Control", useRPMControl);
         telemetry.addData("Current RPM", shooterSubsystem.getCurrentRPM());
